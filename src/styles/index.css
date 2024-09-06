@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Inter', sans-serif;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: 1px solid #cbd5e0;
+  width: 16px;
+  height: 16px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #a2b814; /* Cor teal */
+  border-color: #14b8a6;
+}
