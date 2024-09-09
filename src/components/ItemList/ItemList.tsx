@@ -5,7 +5,7 @@ import ItemCard from '../ItemCard/ItemCard';
 
 interface ItemListProps {
   items: InventoryItem[];
-  onDelete: (id: number) => void; // Define a função de deleção
+  onDelete: (id: number) => void; 
 }
 
 const ItemList: React.FC<ItemListProps> = ({ items, onDelete }) => {

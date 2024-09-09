@@ -6,7 +6,7 @@ const CreateItem = () => {
   const { createNewItem } = useCreateItem();
   const navigate = useNavigate();
 
-  const handleSubmit = async (item: Omit<InventoryItem, 'id' | 'addedAt'>) => {
+  const handleSubmit = async (item: Omit<InventoryItem, 'id' >) => {
     await createNewItem(item);
     navigate('/');
   };
