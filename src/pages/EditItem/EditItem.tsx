@@ -11,7 +11,7 @@ const EditItem = () => {
 
   const item = items.find(item => item.id === Number(id));
 
-  const handleSubmit = async (updatedItem: Partial<Omit<InventoryItem, 'id' | 'addedAt'>>) => {
+  const handleSubmit = async (updatedItem: Partial<Omit<InventoryItem, 'id' >>) => {
     await updateExistingItem(Number(id), updatedItem);
     navigate('/');
   };

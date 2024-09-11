@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { IoMdAdd } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { Search } from "../Search/Search";
+
+
 const Header = () => {
   return (
     <header className="bg-black text-white p-4">
